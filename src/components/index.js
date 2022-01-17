@@ -43,7 +43,7 @@ function updateStructure(rec1,rec2){
               top: rec2Left+"px",
               left: rec2Top + "px",
               width: rec2Width+ "px",
-              height: rec2Height + "px"
+              height: rec2Height + "px",
 			  children: []
             }
             return ans1;
@@ -69,7 +69,7 @@ function updateStructure(rec1,rec2){
               top: rec1Left+"px",
               left: rec1Top + "px",
               width: rec1Width+ "px",
-              height: rec1Height + "px"
+              height: rec1Height + "px",
 			  children: []
             }
             return ans2;

@@ -39,13 +39,13 @@ function updateStructure(rec1,rec2){
             rec2Top = rec2Top - rec1Top;
             rec2Left = rec2Left - rec1Left;
             let ans1 = {...rec1}; 
-            ans1.children = {
+            ans1.children = [{
               top: rec2Left+"px",
               left: rec2Top + "px",
               width: rec2Width+ "px",
               height: rec2Height + "px",
-			  children: []
-            }
+			  			children: []
+            }]
             return ans1;
           }
           return checkB()
@@ -65,13 +65,13 @@ function updateStructure(rec1,rec2){
             rec1Left = rec1Left - rec2Left;
             let ans2 = {...rec2}; 
 
-            ans2.children = {
+            ans2.children = [{
               top: rec1Left+"px",
               left: rec1Top + "px",
               width: rec1Width+ "px",
               height: rec1Height + "px",
 			  children: []
-            }
+            }];
             return ans2;
           }
 					return {...rec1};
